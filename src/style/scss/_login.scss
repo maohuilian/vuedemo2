@@ -1,0 +1,20 @@
+.login{
+  background: url(/static/image/bg.jpg) top center no-repeat;background-size: 100%;
+  width: 1920px;height: 1080px;position: fixed;left: 50%;top: 50%;@include yd(-50%,-50%);
+  .login_box{
+    width: 410px;height: 220px;margin: 410px auto 0;padding-top: 5px;
+    input{
+      display: block;
+      &.username,&.password{
+        width: 350px;border: 1px solid $cdc;margin: 25px auto;text-indent: 10px;
+        font-size: 16px;padding: 12px 0;
+        &:focus{outline: none;}
+      }
+      &.log{
+        height: 46px;width: 352px;background-color: $sblue;border: 0;margin: 0 auto;font-size: 18px;
+        color: $cff;border-radius: 5px;margin-top: 20px;
+      }
+    }
+    input::-webkit-input-placeholder {color: $cc1;}
+  }
+}

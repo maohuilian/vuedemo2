@@ -1,0 +1,65 @@
+.main{
+  position: fixed;left: 200px;top: 50px;right: 0;bottom: 0;
+  .title{
+    color: red;text-indent: 15px;margin: 20px 0 0;
+  }
+  .list{
+    line-height: 2;width: 600px;
+    li{border-bottom: 1px solid $cdd;}
+  }
+}
+.header{
+  height: 50px;background-color:$sblue;
+  .logo{
+    float:left;width: 300px;height: 50px;font-weight: normal;font-size:18px;
+    a{display: block;padding:15px 15px 0;color: $cff;}
+  }
+  .quit{
+    float: right;text-align: center;margin:12px 15px 0;
+    a{display: block;color: $cff;}
+  }
+}
+.menu{
+  width: 200px;position: absolute;left: 0;background-color:rgba( $ccc,.5);bottom: 0;top: 50px;
+  dt,dd{
+    height: 35px;line-height: 35px;text-align: center;
+  }
+  dd a{display: block;}
+  dt{background-color: rgba($ccc,.9);font-weight: bold;color: $c66;}
+  dd:nth-child(even){background-color: rgba($ccc,.3);}
+  dd:nth-child(odd){background-color: rgba($ccc,.5);}
+}
+.header_bar{
+  height: 35px;background-color: rgba($ccc,.5);@extend .cf;line-height: 35px;
+  .goback{
+    float:left;text-align: center;line-height: 35px;position: relative;left: 20px;
+  }
+  .save{
+    float:left;line-height: 35px;margin-left: 30px;
+  }
+  .current{
+    position: absolute;right: 30px;margin-top: 12px;
+  }
+}
+.search{
+  height: 40px;margin: 15px 0;line-height: 30px;padding-left: 20px;
+  .search_title{
+    display: inline-block;
+    .search_title_title{width: 100px;margin-left: 5px;}
+    .search_title_id{width: 120px;}
+    .search_title_button{margin-left: 20px;}
+  }
+}
+.fy{
+  position: relative;top: 18px;float: right;padding-right: 17px;
+  a{
+    padding: 3px 8px;color: $cff;border-radius: 2px;background-color: rgba($blue,.4);
+    &.num{
+      &:not(:nth-child(2)){margin-left: 4px;}
+    }
+    &.disabled{cursor: not-allowed;border:1px solid $cdd;background-color:$cf5;color:$cac;}
+    &.active {
+      background: $sblue;color: $cff;width: 17px;height: 21px;
+    }
+  }
+}
